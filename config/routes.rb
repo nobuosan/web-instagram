@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
   root to:"pages#home"
+  devise_for :users
+
+  # asオプションを使うと、ルーティングに名前をつけれる
+  get '/users/:id', to:'users#show', as: 'user'
 end
