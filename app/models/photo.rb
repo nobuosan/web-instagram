@@ -3,7 +3,7 @@ class Photo < ApplicationRecord
 
   validates :image, presence: true
 
-  # ファイル投稿機能gemの　imagae_uploader.rbとの紐付け
+  # ファイル投稿機能gemのimagae_uploader.rbとの紐付け
   mount_uploader :image, ImageUploader
 
 end
