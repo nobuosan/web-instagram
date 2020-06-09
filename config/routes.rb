@@ -4,4 +4,8 @@ Rails.application.routes.draw do
 
   # asオプションを使うと、ルーティングに名前をつけれる
   get '/users/:id', to:'users#show', as: 'user'
+
+  resources :posts, only: %i(new create index) do
+    resources :photos, only: %i(create)
+  end
 end
