@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   resources :posts, only: %i(new create index) do
     resources :photos, only: %i(create)
   end
+
 end
