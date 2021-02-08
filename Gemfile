@@ -14,7 +14,7 @@ gem 'bootstrap', '~> 4.4.1'
 gem 'jquery-rails'
 gem 'devise', '~> 4.7.1'
 # ファイル投稿機能用gem
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 # MiniMagickでCarrierWaveからImageMagickを使えるように
 gem "mini_magick"
 
